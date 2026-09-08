@@ -28,7 +28,12 @@
 | Overview and navigation | `README.md` — keep short |
 | Current state, actual blockers, next action | `HANDOFF.md` — replace stale status |
 | Study design, facts, budgets, methodological decisions | `docs/PROJECT.md` |
+| Implementation, dependencies, run instructions | `code/` — only when assigned |
+| Midterm slides and speaker notes | `slides/` |
+| Final video script, subtitles, finished video or access link | `video/` |
 | Concrete assignment, owner, deliverable, discussion | GitHub Issue / PR |
+
+Read the relevant section README before preparing a course deliverable. Course requirements there come from supplied excerpts; do not invent missing deadlines, duration or submission rules.
 
 Do not add policies, empty registers, templates or status files without a current need. Keep one root `AGENTS.md`.
 
