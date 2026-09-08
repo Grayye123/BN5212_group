@@ -6,12 +6,16 @@
 
 目前整理资料和维护项目，尚未训练模型。胸片暂不下载，源文件保持原样。
 
-## 项目入口
+## 项目分区
 
-- [当前进展与下一步](HANDOFF.md)
-- 合作者讨论稿：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) · [Markdown](docs/BN5212_Idea1_Team_Brief.md)
-- [实验设计、数据核查与资源预算](docs/PROJECT.md)
-- [Agent 工作约定](AGENTS.md)
+| 分区 | 内容 |
+| --- | --- |
+| [文档 docs](docs/) | 讨论稿 PDF / Markdown、实验设计、数据核查与资源预算 |
+| [代码 code](code/) | 后续实现、依赖与运行说明；目前暂缓 |
+| [期中 PPT slides](slides/) | 占 20%；7 分钟，四位成员均须汇报 |
+| [期末视频 video](video/) | 占 20%；小组录制完成的项目 |
+
+[当前进展与下一步](HANDOFF.md) · [Agent 工作约定](AGENTS.md) · 讨论稿：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) / [Markdown](docs/BN5212_Idea1_Team_Brief.md)
 
 ## 四人协作
 
