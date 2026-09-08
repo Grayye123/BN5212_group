@@ -1,16 +1,17 @@
-# Keep existing local materials out of this maintenance-only repository.
+# 本地原始材料与工作记录不进入共享仓库。
 /raw/
 /out/
 /output/
 /tmp/
 /scripts/
+/private/
 /BN5212_proposal.md
 /BN5212_proposal.pdf
 /*.jpg
 /*.jpeg
 /*.png
 
-# Clinical inputs, per-case outputs, downloaded archives and model files.
+# 影像、病例明细、压缩包与模型权重。
 /data/
 /datasets/
 /checkpoints/
@@ -32,7 +33,7 @@
 *.ckpt
 *.safetensors
 
-# Credentials and local tool state.
+# 凭据与本地工具缓存。
 .env
 .env.*
 !.env.example
