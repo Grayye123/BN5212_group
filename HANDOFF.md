@@ -8,6 +8,7 @@
 
 - 课程子集索引、医生表和现有标签已做关联核查。
 - 图像 idea1 的实验草图及存储、显存预算已整理；见 [实验资料](docs/PROJECT.md)。
+- 合作者讨论稿已入库：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) · [Markdown](docs/BN5212_Idea1_Team_Brief.md)，保留 2026-09-08 的设计与预算快照。
 - 仓库保留首页、Agent 约定、本交接和实验资料；尚未收到队友的实际实验成果。
 
 ## 仍待确定

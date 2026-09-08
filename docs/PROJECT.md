@@ -104,6 +104,8 @@ GB = 10^9 字节；GiB = 2^30 字节。5,534 张 512×512、单通道 8-bit 未�
 
 ## 本地依据
 
-核查依据保留在 `out/cxr_subset_ids.csv`、`out/cxr_metadata.csv`、`out/dataset_zip_index.json`、`raw/cxr-provider-list.csv.gz`、`out/report_labels.csv` 和 `tmp/pdfs/resource_profile.json`。合作者 PDF 为 `output/pdf/BN5212_Idea1_Team_Brief.pdf`。
+核查依据保留在 `out/cxr_subset_ids.csv`、`out/cxr_metadata.csv`、`out/dataset_zip_index.json`、`raw/cxr-provider-list.csv.gz`、`out/report_labels.csv` 和 `tmp/pdfs/resource_profile.json`。
 
 以上为维护者本地路径，不是公开下载入口；本仓库未包含这些文件。旧的全量报告文本计划也不作为当前图像实验的完成证据。
+
+合作者讨论稿已收录为 [PDF](BN5212_Idea1_Team_Brief.pdf) 和 [Markdown](BN5212_Idea1_Team_Brief.md)，保留 2026-09-08 的讨论版本；后续实验设置继续在本页更新。

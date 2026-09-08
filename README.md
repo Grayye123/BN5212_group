@@ -9,6 +9,7 @@
 ## 项目入口
 
 - [当前进展与下一步](HANDOFF.md)
+- 合作者讨论稿：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) · [Markdown](docs/BN5212_Idea1_Team_Brief.md)
 - [实验设计、数据核查与资源预算](docs/PROJECT.md)
 - [Agent 工作约定](AGENTS.md)
 
