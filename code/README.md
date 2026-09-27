@@ -17,6 +17,8 @@ python code/pilot_report.py --work private/midterm_v1_quick --dest private/midte
 
 上述小规模命令将逐病例清单、模型和预测写入 Git 忽略的 `private/midterm_v1_quick/`；图像与 ImageNet 权重缓存复用 `private/midterm_v1/`。现有 `out/audit/` 只读。`--prepare-only` 仅准备图像缓存；缓存后训练可复用，不需要完整解压。`--random-init` 是明确可选的另一实验设定，默认不使用；本次采用已下载并核验官方哈希的 ImageNet ResNet18 权重。
 
+本地输入的位置和申请方式见 [数据位置与获取说明](../docs/DATA_ACCESS.md)。同学应使用自己的授权路径；重跑写入新目录，避免覆盖已冻结的首版运行。
+
 ## 输入与规则
 
 - 标签输入：CheXbert 全量表、272 条人工判定及已有报告上下文。保留各来源和规则调整原因，不覆盖原文件。
