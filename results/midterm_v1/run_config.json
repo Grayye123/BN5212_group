@@ -1,0 +1,22 @@
+{
+  "seed": 20260927,
+  "epochs": 5,
+  "model": "ResNet18",
+  "init": "ImageNet1K_V1",
+  "resolution": 224,
+  "batch_size": 32,
+  "optimizer": "AdamW",
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "selection": "minimum shared validation BCE",
+  "torch": "2.12.0+cu130",
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "primary_metric": "AUROC seen minus unseen",
+  "bootstrap": "1000 paired patient resamples",
+  "manifests": {
+    "seen": "168a8a11fa0186350d47be1518b0a1b868829a854d02cf8a193c24bea61e816c",
+    "unseen": "e2e2f75f8d75b040830ff592a2d68754dd9d27b5ee854d0950c55090c9f08d51",
+    "valid": "222123cc6a97188f2bff1d3dbb9025329e7f3c02df8721d688a5965186e989a7",
+    "test": "14966b27e53a20d22c9394e855c922d2c4dbefd2fde610061b5e43876374c334"
+  }
+}

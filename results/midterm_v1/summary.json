@@ -1,0 +1,86 @@
+{
+  "version": "midterm-v1-provisional",
+  "seed": 20260927,
+  "label_counts": {
+    "": 2276,
+    "1": 731,
+    "-1": 333,
+    "0": 11
+  },
+  "max_train_per_group": 256,
+  "max_valid": 128,
+  "reasons": {
+    "retained": 3135,
+    "likely_uncertain": 49,
+    "policy_ambiguous_excluded": 112,
+    "volume_counted": 41,
+    "most_likely_positive": 14
+  },
+  "human_rows": 272,
+  "changed_from_human": 51,
+  "cohort": {
+    "studies": 2904,
+    "patients": 940,
+    "positive_studies": 709,
+    "positive_patients": 290,
+    "negative_patients": 861,
+    "views": {
+      "AP": 1728,
+      "PA": 1176
+    }
+  },
+  "seen": {
+    "studies": 256,
+    "patients": 167,
+    "positive_studies": 59,
+    "positive_patients": 51,
+    "negative_patients": 139,
+    "views": {
+      "PA": 110,
+      "AP": 146
+    }
+  },
+  "unseen": {
+    "studies": 256,
+    "patients": 171,
+    "positive_studies": 59,
+    "positive_patients": 49,
+    "negative_patients": 144,
+    "views": {
+      "PA": 110,
+      "AP": 146
+    }
+  },
+  "valid": {
+    "studies": 128,
+    "patients": 85,
+    "positive_studies": 26,
+    "positive_patients": 19,
+    "negative_patients": 75,
+    "views": {
+      "PA": 51,
+      "AP": 77
+    }
+  },
+  "test": {
+    "studies": 109,
+    "patients": 55,
+    "positive_studies": 39,
+    "positive_patients": 23,
+    "negative_patients": 42,
+    "views": {
+      "AP": 68,
+      "PA": 41
+    }
+  },
+  "seen_target_studies": 46,
+  "workbook_sha256": "034a665479aa3e0e83d10d9e7d0b4a43950c43ae5cdaa8a228cb8ab2d5b48f61",
+  "manifest_sha256": "d295c71ef7ec4f6cd2ee7e05811ddb787831bf418d70db4ccc7e2e252640d7f9",
+  "limitations": [
+    "Provisional report-derived labels, not an expert image gold standard.",
+    "Mechanical unmentioned labels not independently human-validated.",
+    "Rule reconciliation is conservative and may exclude true positives.",
+    "One target, one seed; exploratory comparison, no causal doctor interpretation.",
+    "Positive and negative patient counts may overlap for longitudinal patients."
+  ]
+}

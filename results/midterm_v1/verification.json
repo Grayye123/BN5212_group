@@ -1,0 +1,15 @@
+{
+  "source_files": {
+    "code\\pilot_prepare.py": "32d58cf7e7c9cd136c0bcbdf21e675c0e29b41a5b1d4d6e081d1553123d0d978",
+    "code\\pilot_train.py": "03fd887205bd9e9b5979709e0be25991c232740c1568f8b0685725ea2a720d6c",
+    "code\\pilot_report.py": "daa6cd77eeacc36d645bcbfe1dbee29c992a3ee77ae7ec88c7181db7e4d968c2"
+  },
+  "artifacts": {
+    "results.json": "82231dc810c16700180496004eb254bcc8942316393f0899279b2bcdda325c6b",
+    "predictions.csv": "fd40dadb0c0e3d59eff794b2c0ee056ec23d0a3cf6f62eb8cf8a28cb658d8b05",
+    "seen.pt": "61fd92bc62ea30a68418a61a39fcfa34443c8edd1100a45f5e2bf9f05289ba2b",
+    "unseen.pt": "de2a42e303b233e53f6f04603f34b08df1cfc49cab6a7b222b3875d219e76412"
+  },
+  "verification": "718 real images validated; 109 prediction rows matched; metrics independently recomputed; plot visually inspected",
+  "local_commit": "a95f8df"
+}
