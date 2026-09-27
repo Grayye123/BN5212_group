@@ -1,52 +1,69 @@
-# Agent instructions
+# AI 接手指南
 
-- Role: project maintainer
-- Team: 4 people; do not invent names or assignments
-- Phase: documentation, task tracking, result intake; implementation is deferred
-- Communication: concise Chinese; explain technical points plainly
-- Text encoding: UTF-8
+更新：2026-09-27。角色：项目维护者；四人小组，不虚构成员姓名或分工。使用简洁中文，技术问题通俗解释；文件使用 UTF-8。
 
-## Start
+## 当前阶段与阅读顺序
 
-1. Read `README.md` and `HANDOFF.md`. Consult `docs/PROJECT.md` for research facts.
-2. Check Git status and remote changes before editing. Preserve other members' work.
-3. Follow the current user request. Use existing authorization; ask only for a missing input that blocks the task.
+**期中第一版真实实验已完成、核查并发布到 main。当前重点是制作 PPT，不是从零标注或重新训练。** 这只是一次探索性实验，完整项目仍待期末阶段扩展。旧文档中“实现暂缓”“尚未训练”“不推送”等内容是历史状态，不再代表当前进度。
 
-## Limits
+开始时依次阅读：
 
-- Do not download, move, delete, extract or convert original chest data until the user changes that instruction.
-- Do not start implementation or training unless explicitly assigned.
-- Do not upload images, report text, row-level clinical data, provider mappings, credentials or private download links.
-- Leave local `raw/`, `out/`, `output/`, `tmp/` and legacy `scripts/` untouched by repository maintenance.
-- Do not invent results, completed runs, reviewers or external resources. Distinguish proposals, synthetic tests and real-data results.
-- Provider IDs describe study associations; report-derived labels are not independent image diagnoses. Performance differences do not establish a causal doctor effect.
+1. [README.md](README.md)：项目概览。
+2. [HANDOFF.md](HANDOFF.md)：最新状态、实际阻塞与下一步；后续进度以此为准。
+3. [期中结果入口](results/midterm_v1/README.md)：公开成果、文件用途、指标解释与接手清单。
+4. 按任务阅读 [研究记录](docs/PROJECT.md)、[代码说明](code/README.md)、[PPT 要求](slides/README.md) 或 [视频要求](video/README.md)。研究记录保留旧方案，须区分方案与实际运行。
 
-## Update the right place
+修改前检查 Git 状态并获取远端变化，保留其他成员的工作。遵循当前用户请求与已有授权，只询问真正阻塞任务的缺失信息；不能假定能访问另一位成员的聊天或本机私有文件。
 
-| Information | Destination |
+## 已完成实验：避免误读
+
+- 模型是 ImageNet 预训练 ResNet18，输入只有胸片。文本报告用于产生标签；医生编号只用于分组，不输入模型。医生编号表示检查关联，不是逐图独立诊断者。
+- 比较 seen（训练包含目标医生关联病例）和 unseen（训练排除这些病例），在完全相同的目标医生测试集上评估。
+- 实际训练两组各 256 次检查、共享验证 128 次、测试 109 次 / 55 位病人。各训练 5 轮，按共享验证 BCE 选择第 3 / 4 轮。旧的每组 1,409 次是完整规模清单，**未按该规模训练**。
+- 测试 AUROC 为 0.672894 / 0.676923；seen−unseen 为 -0.004029，病人配对 95% 区间为 [-0.080486, 0.060237]。结论是“当前没有稳定的组间差异证据”；不能写成两组等效、没有医生影响或正确率约 67%。完整精度以 [results.json](results/midterm_v1/results.json) 为准，其中 history 的指标属于验证集。
+- 四人完成 222 条分歧和 50 条一致样本判定。规则为 likely 不确定、most likely 阳性、非常轻微 volume loss 不计入；复杂冲突保守排除。实现词表见代码。51 条人工判定经规则协调调整，原判定保留。未随机补标签，也未新增专家影像复核。
+- 标签来自报告，不是独立影像金标准。未提及按 0 处理不代表医学上确定无病；机械未提及部分未追加人工复核。单医生、单种子结果不能证明因果效应或评价医生水平。
+
+此前已核查：718 张图像成功解码；病人隔离及标签/体位匹配通过；109 行预测对应测试清单；三个指标独立重算一致；1,000 次配对病人 bootstrap 有效。发布时还核验了权重加载、3 组规则测试、公开文件校验值与全新 main 克隆。以上是此前执行记录，不得声称接手者本次重新运行了这些检查。
+
+## 下一步与授权范围
+
+制作 PPT 时直接使用 [7 分钟讲述稿](results/midterm_v1/PRESENTATION_NOTES.md)、[结果图](results/midterm_v1/results.png) 和结果表，无需下载胸片、安装训练环境或重新训练。正式可编辑 PPT 与提交版 PDF 尚待制作，放到 `slides/`。
+
+课程要求：7 分钟，四位成员均须发言，由一人最晚在汇报前一天提交 Canvas。具体日期和成员分工尚未确定；不得虚构日期、视频时长或分工。
+
+用户已授权首版实现、只读解码生成本机训练副本、训练与公开成果发布。不要再按旧的“实施暂缓”状态阻塞交接，也不要扩大为自动开展完整期末项目。除非新任务需要，不重复训练、不扩展数据、不为改善结果改选医生或测试集。期末可继续多医生、多种子和标签验证。
+
+## 文件与发布边界
+
+- 公开结果集中在 `results/midterm_v1/`，代码在 `code/`。克隆即可做 PPT；完整重跑还需要授权数据和私有输入，不能声称克隆即可重现实验。
+- 原始影像、报告原文、逐病例标签/划分/预测、医生编号对照、标注工作簿、凭据与私有下载链接不得上传。汇总统计及不含病例内容的结果图可以发布。
+- 两份约 45 MB 权重仅在维护者本机 `results/midterm_v1/models/` 和原运行目录保留，被 Git 忽略；GitHub 只有说明与校验值。遵循 [模型共享说明](results/midterm_v1/models/README.md)，不通过强制添加、Git LFS 或 Release 绕过不公开分发的安排。
+- `private/midterm_v1_quick/` 为原小规模运行目录；`private/midterm_v1/` 含完整规模清单、图像及官方权重缓存。接手机器不一定有这些目录；制作 PPT 不依赖它们。
+- 仓库维护不改动本地 `private/`、`raw/`、`out/`、`output/`、`tmp/` 和旧 `scripts/`，不移动、删除或覆盖原始胸片数据。新数据处理须在明确任务范围内进行。
+- 成果发布见 [PR #11](https://github.com/Grayye123/BN5212_group/pull/11)，合并提交 `9136610`。原实验本地提交 `a95f8df` 留在 `codex/phase-plan`，其未发布历史含报告原句；**不要直接推送或合并该旧本地分支**。后续从最新 `origin/main` 创建分支。
+- `verification.json` 的 local_commit 和源文件哈希指原实验版本；`SHA256SUMS.txt` 用于核对公开成果字节。保留 `.gitattributes` 的换行设置。不得手改指标伪装新运行；确需更新冻结成果时说明版本与依据，并同步校验值。
+
+## 信息更新到哪里
+
+| 信息 | 位置 |
 | --- | --- |
-| Overview and navigation | `README.md` — keep short |
-| Current state, actual blockers, next action | `HANDOFF.md` — replace stale status |
-| Study design, facts, budgets, methodological decisions | `docs/PROJECT.md` |
-| Implementation, dependencies, run instructions | `code/` — only when assigned |
-| Midterm slides and speaker notes | `slides/` |
-| Final video script, subtitles, finished video or access link | `video/` |
-| Concrete assignment, owner, deliverable, discussion | GitHub Issue / PR |
+| 概览与导航 | `README.md`，保持简短 |
+| 最新状态、实际阻塞、下一步 | `HANDOFF.md`，替换过时状态 |
+| AI 接手方法、授权范围与工作约定 | 根目录 `AGENTS.md`，只保留这一份 |
+| 研究设计、事实、预算、方法决策 | `docs/PROJECT.md` |
+| 已发布期中指标、图表、配置和讲述稿 | `results/midterm_v1/`，避免重复维护多份结果 |
+| 实现、依赖与运行说明 | `code/` |
+| 正式期中 PPT 与提交版 PDF | `slides/` |
+| 期末视频脚本、字幕、成片或访问链接 | `video/` |
+| 具体任务、负责人、交付讨论 | GitHub Issue / PR，不虚构负责人 |
 
-Read the relevant section README before preparing a course deliverable. Course requirements there come from supplied excerpts; do not invent missing deadlines, duration or submission rules.
+没有当前需要时，不新增空登记表、模板或状态文件。
 
-Do not add policies, empty registers, templates or status files without a current need. Keep one root `AGENTS.md`.
+## 接收成果与完成工作
 
-## Receive a result
-
-1. Read the supplied Issue / PR / branch; record its URL and commit. Do not infer access to another person's chat.
-2. Inspect changed files and supporting evidence before executing anything.
-3. Record: **conclusion; files/version; checks performed; limitations; next action**. Say “未运行” when appropriate.
-4. Distinguish “已收到”, “已核查” and “已采纳”. Preserve conflicting evidence; update the handoff after resolution.
-
-## Finish
-
-- Review the diff; check UTF-8, relative links, shared-file scope and consistency of claims. Use checks proportionate to the change.
-- Publish via a `codex/` branch and PR. Use short, specific Chinese commit titles; preserve distinct logical commits when merging. Do not force-push shared history or make empty edits for appearance.
-- Revisit the actual GitHub page after layout or README changes.
-- Report what changed, where it is, and any remaining blocker in a few Chinese sentences.
+1. 阅读用户提供的 Issue / PR / 分支，记录链接和提交版本；先检查文件与证据，再执行代码。
+2. 记录结论、文件/版本、实际检查、限制和下一步。区分“已收到”“已核查”“已采纳”，保留冲突证据。未运行的内容写明“未运行”；不编造结果、审阅者或资源。
+3. 更新交接状态，检查 diff、UTF-8、相对链接、公开文件范围和结论一致性。文档修改做相应检查即可，不必重跑训练。
+4. 通过 `codex/` 分支与 PR 发布；使用简短中文提交标题，合并时保留不同逻辑提交，不强推共享历史。不把报告原句带入新提交或 Git 历史。
+5. README 或布局修改后回看实际 GitHub 页面。向用户简要说明改了什么、文件位置、核查内容及剩余阻塞。

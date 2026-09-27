@@ -15,7 +15,7 @@
 | [期中 PPT slides](slides/) | 占 20%；7 分钟，四位成员均须汇报 |
 | [期末视频 video](video/) | 占 20%；小组录制完成的项目 |
 
-[当前进展与下一步](HANDOFF.md) · [阶段计划与日志](docs/PLAN.md) · [Agent 工作约定](AGENTS.md) · 讨论稿：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) / [Markdown](docs/BN5212_Idea1_Team_Brief.md)
+[当前进展与下一步](HANDOFF.md) · [阶段计划与日志](docs/PLAN.md) · [AI 接手指南](AGENTS.md) · 讨论稿：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) / [Markdown](docs/BN5212_Idea1_Team_Brief.md)
 
 ## 四人协作
 
