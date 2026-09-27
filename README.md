@@ -4,18 +4,18 @@
 
 我们比较训练时包含或排除某位医生病例的两个模型，在同一批测试病例上的表现。
 
-目前整理资料和维护项目，尚未训练模型。胸片暂不下载，源文件保持原样。
+期中第一版真实配对实验已完成：两组模型的测试 AUROC 为 0.673 / 0.677，当前没有稳定组间差异证据。**同学接手请先打开 [期中结果总文件夹](results/midterm_v1/README.md)**：指标、图表、7 分钟讲述稿与接手清单均已整理。代码见 [运行说明](code/README.md)。原始数据与模型权重保留在授权本地环境。
 
 ## 项目分区
 
 | 分区 | 内容 |
 | --- | --- |
 | [文档 docs](docs/) | 讨论稿 PDF / Markdown、实验设计、数据核查与资源预算 |
-| [代码 code](code/) | 后续实现、依赖与运行说明；目前暂缓 |
+| [代码 code](code/) | 初版实验实现、依赖与运行说明 |
 | [期中 PPT slides](slides/) | 占 20%；7 分钟，四位成员均须汇报 |
 | [期末视频 video](video/) | 占 20%；小组录制完成的项目 |
 
-[当前进展与下一步](HANDOFF.md) · [Agent 工作约定](AGENTS.md) · 讨论稿：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) / [Markdown](docs/BN5212_Idea1_Team_Brief.md)
+[当前进展与下一步](HANDOFF.md) · [阶段计划与日志](docs/PLAN.md) · [Agent 工作约定](AGENTS.md) · 讨论稿：[PDF](docs/BN5212_Idea1_Team_Brief.pdf) / [Markdown](docs/BN5212_Idea1_Team_Brief.md)
 
 ## 四人协作
 

@@ -1,6 +1,6 @@
 # 期中 PPT · 20%
 
-这里放期中汇报的可编辑 PPT、提交版 PDF 和讲稿。当前尚无 PPT 文件。
+这里放期中汇报的可编辑 PPT、提交版 PDF 和讲稿。已完成 [期中第一版讲述稿与真实结果表](MIDTERM_V1.md)，尚未排版为 PPT 文件。
 
 ## 汇报要求
 
@@ -19,4 +19,4 @@
 
 由任意一位成员在 **Canvas** 提交小组 slides，最晚在**汇报日期前 1 天**提交。具体汇报日期尚未提供。
 
-以上整理自本次提供的 “Midterm Presentation (20%)” 截图。现有材料可从 [讨论稿](../docs/BN5212_Idea1_Team_Brief.md) 和 [实验资料](../docs/PROJECT.md) 取用；当前没有真实模型性能结果。
+以上整理自本次提供的 “Midterm Presentation (20%)” 截图。现有材料可从 [讨论稿](../docs/BN5212_Idea1_Team_Brief.md) 和 [实验资料](../docs/PROJECT.md) 取用；已有单医生、单种子的小规模真实配对结果，见上述讲述稿。

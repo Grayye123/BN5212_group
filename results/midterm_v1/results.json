@@ -1,0 +1,155 @@
+{
+  "status": "completed_real_image_experiment",
+  "config": {
+    "seed": 20260927,
+    "epochs": 5,
+    "model": "ResNet18",
+    "init": "ImageNet1K_V1",
+    "resolution": 224,
+    "batch_size": 32,
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "selection": "minimum shared validation BCE",
+    "torch": "2.12.0+cu130",
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "primary_metric": "AUROC seen minus unseen",
+    "bootstrap": "1000 paired patient resamples",
+    "manifests": {
+      "seen": "168a8a11fa0186350d47be1518b0a1b868829a854d02cf8a193c24bea61e816c",
+      "unseen": "e2e2f75f8d75b040830ff592a2d68754dd9d27b5ee854d0950c55090c9f08d51",
+      "valid": "222123cc6a97188f2bff1d3dbb9025329e7f3c02df8721d688a5965186e989a7",
+      "test": "14966b27e53a20d22c9394e855c922d2c4dbefd2fde610061b5e43876374c334"
+    }
+  },
+  "seen": {
+    "AUROC": 0.6728937728937728,
+    "AUPRC": 0.5111361639213976,
+    "Brier": 0.22178033267652728
+  },
+  "unseen": {
+    "AUROC": 0.676923076923077,
+    "AUPRC": 0.5728679865271041,
+    "Brier": 0.21881772443746988
+  },
+  "constant_baseline": {
+    "AUROC": 0.5,
+    "AUPRC": 0.3577981651376147,
+    "Brier": 0.2459914181210579
+  },
+  "paired_bootstrap": {
+    "valid_replicates": 1000,
+    "requested_replicates": 1000,
+    "intervals": {
+      "AUROC": [
+        -0.08048632762586252,
+        0.06023742391693519
+      ],
+      "AUPRC": [
+        -0.16740482539613719,
+        0.07385380336455769
+      ],
+      "Brier": [
+        -0.03398362185972959,
+        0.04158237943218795
+      ]
+    }
+  },
+  "history": [
+    {
+      "model": "seen",
+      "epoch": 1,
+      "train_loss": 0.7120800241827965,
+      "valid_loss": 0.6105333318986086,
+      "AUROC": 0.5690045248868778,
+      "AUPRC": 0.23461696890239458,
+      "Brier": 0.21098061003767526
+    },
+    {
+      "model": "seen",
+      "epoch": 2,
+      "train_loss": 0.37502919510006905,
+      "valid_loss": 0.5422324469675204,
+      "AUROC": 0.5727752639517346,
+      "AUPRC": 0.3137343132321804,
+      "Brier": 0.17936258584604803
+    },
+    {
+      "model": "seen",
+      "epoch": 3,
+      "train_loss": 0.18488107807934284,
+      "valid_loss": 0.5207364961503704,
+      "AUROC": 0.5803167420814479,
+      "AUPRC": 0.33321860927638813,
+      "Brier": 0.1674530516229808
+    },
+    {
+      "model": "seen",
+      "epoch": 4,
+      "train_loss": 0.07655384205281734,
+      "valid_loss": 0.5297727298364734,
+      "AUROC": 0.5935143288084465,
+      "AUPRC": 0.33302412695328254,
+      "Brier": 0.16974621122363695
+    },
+    {
+      "model": "seen",
+      "epoch": 5,
+      "train_loss": 0.047625562408939004,
+      "valid_loss": 0.5433557251236965,
+      "AUROC": 0.5961538461538461,
+      "AUPRC": 0.32127986664974983,
+      "Brier": 0.17266380643401957
+    },
+    {
+      "model": "unseen",
+      "epoch": 1,
+      "train_loss": 0.6848403960466385,
+      "valid_loss": 0.6405593561970678,
+      "AUROC": 0.6123680241327301,
+      "AUPRC": 0.3029355195344171,
+      "Brier": 0.2253337977486245
+    },
+    {
+      "model": "unseen",
+      "epoch": 2,
+      "train_loss": 0.3280321955680847,
+      "valid_loss": 0.6076022378872644,
+      "AUROC": 0.5829562594268477,
+      "AUPRC": 0.24535960985440775,
+      "Brier": 0.21027170469472095
+    },
+    {
+      "model": "unseen",
+      "epoch": 3,
+      "train_loss": 0.17191379331052303,
+      "valid_loss": 0.5978689600981446,
+      "AUROC": 0.5957767722473605,
+      "AUPRC": 0.2552081659057147,
+      "Brier": 0.20405505149884479
+    },
+    {
+      "model": "unseen",
+      "epoch": 4,
+      "train_loss": 0.06915102922357619,
+      "valid_loss": 0.5970703711211955,
+      "AUROC": 0.6315987933634993,
+      "AUPRC": 0.2957393180347866,
+      "Brier": 0.19666548900513647
+    },
+    {
+      "model": "unseen",
+      "epoch": 5,
+      "train_loss": 0.04019160626921803,
+      "valid_loss": 0.6268779907167561,
+      "AUROC": 0.6372549019607844,
+      "AUPRC": 0.28843760118969664,
+      "Brier": 0.1969913402559172
+    }
+  ],
+  "difference": {
+    "AUROC": -0.004029304029304126,
+    "AUPRC": -0.06173182260570653,
+    "Brier": 0.0029626082390573905
+  }
+}
