@@ -30,4 +30,6 @@
 
 ## 协作与发布
 
-维护者已明确授权本次公开发布，替代此前不推送安排。通过 `codex/midterm-handoff` 分支和 PR 合入 main，同学克隆 main 后直接使用结果文件夹制作 PPT，无需运行训练。MIMIC 衍生模型共享指导与权重校验值见 [模型说明](results/midterm_v1/models/README.md)。原本地实验提交 `a95f8df` 保留在 `codex/phase-plan`，不直接推送含报告原句的历史。期末视频完整要求仍未提供。
+维护者已明确授权本次公开发布，替代此前不推送安排。成果已通过 [PR #11](https://github.com/Grayye123/BN5212_group/pull/11) 合入 main（`9136610`），同学克隆 main 后直接使用结果文件夹制作 PPT，无需运行训练。MIMIC 衍生模型共享指导与权重校验值见 [模型说明](results/midterm_v1/models/README.md)。原本地实验提交 `a95f8df` 保留在 `codex/phase-plan`，不直接推送含报告原句的历史。期末视频完整要求仍未提供。
+
+AI 接手请先读 [AGENTS.md](AGENTS.md)：已同步实际阶段、结果入口、既有授权与发布边界；当前任务仍是正式 PPT 制作，无需重跑实验。
