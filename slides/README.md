@@ -1,6 +1,24 @@
 # 期中 PPT · 20%
 
-这里放期中汇报的可编辑 PPT、提交版 PDF 和讲稿。已完成 [期中第一版讲述稿与真实结果表](MIDTERM_V1.md)，尚未排版为 PPT 文件。
+这里放期中汇报的可编辑 PPT、PDF 和讲稿。
+
+## 当前正式版
+
+2026-09-28：用户提供 Claude 制作的 **v3** 并授权发布，以下两个文件按原始字节保存，未重新排版或导出。
+
+- [可编辑 PPT · BN5212_Midterm_Formal_v3.pptx](formal-v3/BN5212_Midterm_Formal_v3.pptx)
+- [PDF · BN5212_Midterm_Formal_v3.pdf](formal-v3/BN5212_Midterm_Formal_v3.pdf)
+
+共 12 页：11 页主讲、1 页参考文献。PPT 备注含英文讲稿、中文要点和建议分段，主讲时间合计 420 秒；分段不是已确认的成员分工。主要指标与 [已冻结结果](../results/midterm_v1/results.json) 一致，旧 [讲述稿与结果表](MIDTERM_V1.md) 保留作参考。文件已接收并核查、按用户要求作为当前共享版本；尚未提交 Canvas。
+
+核查：已查看 PDF 全部页面、检查 PPT 文本、备注及 3 个图表工作簿，并核对页数、主要指标和文件哈希；此次未运行训练。PPT 结构检查发现 11 条指向不存在但未被引用的旧母版声明，实际引用的母版存在；PDF 可渲染，但其无障碍标签结构有解析警告。未在 PowerPoint 原生打开验证。为保留用户原文件，本次不改写以上内部结构。
+
+原文件 SHA-256：
+
+```text
+d44ce1592c93a01d46b7896783311b8ca063230ce7d05f5d12c9bb26de21bf8e  BN5212_Midterm_Formal_v3.pptx
+bfa727542ea53a0dc74158293b93306c8bae4ced9ec57228bec348b4945d2839  BN5212_Midterm_Formal_v3.pdf
+```
 
 ## 汇报要求
 
