@@ -1,0 +1,33 @@
+Speaker 4 — Results and next steps
+Source: BN5212_Midterm_Formal.pdf, pages 9–11 (section 04).
+Read the English paragraphs only. Page cues and timing notes are not spoken.
+
+[Page 9 — Results]
+
+Now I will present our results and next steps.
+
+We evaluated both models on the same 109 studies from 55 patients. The seen model included physician A's cases during training, while the unseen model excluded them.
+
+Their A-U-R-O-C scores were very close: zero point six seven three for seen, and zero point six seven seven for unseen. This measures how well the model ranks positive cases above negative ones; it is not accuracy.
+
+The unseen model also had slightly better precision-recall and Brier scores. Both models performed better than the constant baseline on these measures, although we did not separately test whether that improvement was statistically significant.
+
+[Page 10 — Uncertainty]
+
+However, these small differences do not establish a clear advantage.
+
+We used one thousand paired bootstrap samples, resampling patients. All three confidence intervals included zero. Therefore, this pilot provides no clear evidence of a performance difference between the two training conditions.
+
+This does not prove that the models are equivalent. The intervals also capture uncertainty from test patients, not from retraining with different random seeds.
+
+[Page 11 — Conclusion and next steps]
+
+Our main achievement is a working comparison using real images.
+
+The main limitations are one physician group, one training seed, small samples, and labels derived from reports rather than independent image review.
+
+Next, we plan to include more physicians and seeds, use the larger prepared training sets, check labels marked as not mentioned, and explore case mix and higher image resolution.
+
+Finally, this study does not judge physician quality or demonstrate a causal physician effect.
+
+Thank you.

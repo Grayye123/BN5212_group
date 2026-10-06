@@ -28,7 +28,7 @@
 
 ## 下一步与授权范围
 
-制作 PPT 时直接使用 [7 分钟讲述稿](results/midterm_v1/PRESENTATION_NOTES.md)、[结果图](results/midterm_v1/results.png) 和结果表，无需下载胸片、安装训练环境或重新训练。正式可编辑 PPT 与提交版 PDF 尚待制作，放到 `slides/`。
+制作 PPT 时直接使用 [7 分钟讲述稿](results/midterm_v1/PRESENTATION_NOTES.md)、[结果图](results/midterm_v1/results.png) 和结果表，无需下载胸片、安装训练环境或重新训练。2026-10-06 已收到 `slides/BN5212_Midterm_Formal.pdf`（12 页），尚未收到可编辑 PPTX。用户负责 04 部分（第 9–11 页），英文讲稿在 `slides/SPEAKER_4_EN.txt`；下一步为排练与提交确认，其他成员分工未确认。
 
 课程要求：7 分钟，四位成员均须发言，由一人最晚在汇报前一天提交 Canvas。具体日期和成员分工尚未确定；不得虚构日期、视频时长或分工。
 
