@@ -51,3 +51,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.log
+
+# Personal English speech stays local.
+/slides/SPEAKER_4_EN.txt
