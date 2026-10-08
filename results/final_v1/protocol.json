@@ -1,0 +1,172 @@
+{
+  "model": "ImageNet ResNet18",
+  "resolution": 224,
+  "seeds": [
+    20260927,
+    20260928,
+    20260929
+  ],
+  "pair_seed": 20261008,
+  "epochs": 5,
+  "optimizer": "AdamW",
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "selection": "shared validation BCE",
+  "eligibility": "top 3 by cohort patient count, test positive/negative patients >=20, training exposure >=20",
+  "source_cohort_sha256": "d295c71ef7ec4f6cd2ee7e05811ddb787831bf418d70db4ccc7e2e252640d7f9",
+  "source_labels_sha256": "571d5f826a5bcdca55582776710116f095e0fbab2b4d44496891045c6561d517",
+  "providers": [
+    {
+      "name": "provider_01",
+      "sizes": {
+        "seen": {
+          "studies": 1409,
+          "patients": 511,
+          "positive_studies": 324,
+          "positive_patients": 158,
+          "negative_patients": 462,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "unseen": {
+          "studies": 1409,
+          "patients": 528,
+          "positive_studies": 324,
+          "positive_patients": 166,
+          "negative_patients": 474,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "valid": {
+          "studies": 477,
+          "patients": 174,
+          "positive_studies": 97,
+          "positive_patients": 50,
+          "negative_patients": 160,
+          "views": {
+            "PA": 188,
+            "AP": 289
+          }
+        },
+        "test": {
+          "studies": 109,
+          "patients": 55,
+          "positive_studies": 39,
+          "positive_patients": 23,
+          "negative_patients": 42,
+          "views": {
+            "AP": 68,
+            "PA": 41
+          }
+        }
+      },
+      "seen_target_studies": 249
+    },
+    {
+      "name": "provider_02",
+      "sizes": {
+        "seen": {
+          "studies": 1412,
+          "patients": 532,
+          "positive_studies": 295,
+          "positive_patients": 150,
+          "negative_patients": 488,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "unseen": {
+          "studies": 1412,
+          "patients": 537,
+          "positive_studies": 295,
+          "positive_patients": 160,
+          "negative_patients": 487,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "valid": {
+          "studies": 475,
+          "patients": 182,
+          "positive_studies": 98,
+          "positive_patients": 52,
+          "negative_patients": 167,
+          "views": {
+            "PA": 198,
+            "AP": 277
+          }
+        },
+        "test": {
+          "studies": 90,
+          "patients": 49,
+          "positive_studies": 33,
+          "positive_patients": 21,
+          "negative_patients": 42,
+          "views": {
+            "PA": 24,
+            "AP": 66
+          }
+        }
+      },
+      "seen_target_studies": 246
+    },
+    {
+      "name": "provider_03",
+      "sizes": {
+        "seen": {
+          "studies": 1472,
+          "patients": 534,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 487,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "unseen": {
+          "studies": 1472,
+          "patients": 543,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 494,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "valid": {
+          "studies": 485,
+          "patients": 179,
+          "positive_studies": 101,
+          "positive_patients": 54,
+          "negative_patients": 164,
+          "views": {
+            "PA": 207,
+            "AP": 278
+          }
+        },
+        "test": {
+          "studies": 110,
+          "patients": 51,
+          "positive_studies": 42,
+          "positive_patients": 23,
+          "negative_patients": 41,
+          "views": {
+            "AP": 76,
+            "PA": 34
+          }
+        }
+      },
+      "seen_target_studies": 186
+    }
+  ],
+  "bootstrap": "1000 paired patient samples per model pair; seed spread descriptive only"
+}
