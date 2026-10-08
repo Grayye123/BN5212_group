@@ -2,7 +2,7 @@
 
 ## 2026-10-08 期末扩展
 
-期末扩展已完成：`final_study.py` 从旧完整规模目录的冻结 `cohort.csv` / `labels.csv` 读取，不要求重填桌面工作簿。按预设可用规模选择 3 个医生组，固定 3 个训练种子，每个 seen/unseen 各 5 轮；每次比较共用同一医生测试集与验证集，跨种子清单字节一致。新运行仅写 `private/final_v1/`，期中两目录不改动。协议见 [PROJECT.md](../docs/PROJECT.md) 最新章节，已核查汇总见 [期末结果](../results/final_v1/README.md)。
+期末扩展已完成：`final_study.py` 从旧完整规模目录的冻结 `cohort.csv` / `labels.csv` 读取，不要求重填桌面工作簿。按预设可用规模选择 3 个医生组，固定 3 个训练种子，每个 seen/unseen 各 5 轮；每次比较共用同一医生测试集与验证集，跨种子清单字节一致。新运行仅写 `private/final_v1/`，期中两目录不改动。协议见 [PROJECT.md](../docs/PROJECT.md) 最新章节，[实验报告](../results/final_v1/REPORT.md)、[模型说明](../results/final_v1/MODEL_CARD.md)与[期末结果](../results/final_v1/README.md)供接手审阅；权重暂不提交。
 
 ```powershell
 python -m unittest discover -s code -p test_final_study.py -q

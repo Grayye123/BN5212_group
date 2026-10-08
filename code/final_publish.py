@@ -128,7 +128,7 @@ def publish(source, private, destination):
              '- 固定小规模试验已评估过部分测试病例，本次不是新的外部验证。',
              '- 常数分数基线来自训练阳性率，不读取图像；没有额外架构对照或新算法声明。', '',
              '## 复现和交付', '',
-             '代码见 [运行说明](../../code/README.md)，研究协议见 [PROJECT.md](../../docs/PROJECT.md)。克隆能获取公开材料，完整重跑仍需个人数据授权及私有输入。视频要求见 [录制说明](../../video/README.md)。', '']
+             '代码见 [运行说明](../../code/README.md)，研究协议见 [PROJECT.md](../../docs/PROJECT.md)。克隆能获取公开的模型实现与汇总结果，完整重跑仍需个人数据授权及私有输入。权重暂不提交。', '']
     (build / 'README.md').write_text('\n'.join(text), encoding='utf-8')
     sums = '\n'.join(f'{digest(path)}  {path.name}' for path in sorted(build.iterdir()) if path.is_file()) + '\n'
     (build / 'SHA256SUMS.txt').write_text(sums, encoding='utf-8')
