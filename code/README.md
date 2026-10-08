@@ -1,5 +1,23 @@
 # 代码
 
+## 2026-10-08 期末扩展
+
+期末扩展已完成：`final_study.py` 从旧完整规模目录的冻结 `cohort.csv` / `labels.csv` 读取，不要求重填桌面工作簿。按预设可用规模选择 3 个医生组，固定 3 个训练种子，每个 seen/unseen 各 5 轮；每次比较共用同一医生测试集与验证集，跨种子清单字节一致。新运行仅写 `private/final_v1/`，期中两目录不改动。协议见 [PROJECT.md](../docs/PROJECT.md) 最新章节，已核查汇总见 [期末结果](../results/final_v1/README.md)。
+
+```powershell
+python -m unittest discover -s code -p test_final_study.py -q
+python code/final_study.py --stage prepare
+python code/final_audit.py
+python code/final_study.py --stage all
+python code/final_publish.py
+```
+
+以上是具备授权数据和私有输入时的复现命令，**现有冻结结果已完成，无需重复执行**。已有 `private/final_v1/plan.json` 时不要再执行 prepare；若确因中断恢复，可先 `--stage verify`，再执行 all。先核对 `runner_process.json` 所指进程，避免与后台运行重复；运行锁会拒绝并发。完成结果须具备预测、图表和两份权重，预测逐行对应冻结测试清单，三个指标独立重算通过后才跳过。中断的运行保留资产并从相同 ImageNet 初始化和同一冻结种子重跑；不恢复优化器/逐轮训练状态。配置或已完成指标不一致会停止，不默默覆盖。
+
+本轮使用 224 像素与现有训练设置；未增加新架构或 512 分辨率。summary_results.json 保存各医生/种子及描述性跨种子差值；不把 3 次种子当独立病人，也不合并重叠医生测试集生成伪独立区间。final_audit.py 只核对标签/影像头/病例构成结构，不能宣称独立人工或专家验证。final_publish.py 对 18 份权重重新推理、核验指标并只输出允许公开的汇总文件；已有 `results/final_v1/` 时不会覆写冻结版本。
+
+下方为已冻结的期中首版实现记录，原命令和事实仍保留。
+
 2026-09-27：维护者已明确授权期中第一版实现与训练。目标是一位目标医生、一个种子的配对实验，不等待期末级别的完整人工验证。原始 ZIP 不改写；只生成本机训练缩略副本。当前已完成标签、划分、合成检查及期中小规模真实配对训练。
 
 ## 第一版入口
