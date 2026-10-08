@@ -1,5 +1,6 @@
 # Keep frozen artifacts byte-identical across operating systems.
 results/midterm_v1/** -text whitespace=cr-at-eol
+results/final_v1/** -text whitespace=cr-at-eol
 # Original experiment source files use LF.
 code/pilot_prepare.py text eol=lf
 code/pilot_train.py text eol=lf

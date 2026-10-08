@@ -1,0 +1,923 @@
+{
+  "status": "completed_real_multi_provider_experiment",
+  "runs": [
+    {
+      "provider": "provider_01",
+      "seed": 20260927,
+      "sizes": {
+        "seen": {
+          "studies": 1409,
+          "patients": 511,
+          "positive_studies": 324,
+          "positive_patients": 158,
+          "negative_patients": 462,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "unseen": {
+          "studies": 1409,
+          "patients": 528,
+          "positive_studies": 324,
+          "positive_patients": 166,
+          "negative_patients": 474,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "valid": {
+          "studies": 477,
+          "patients": 174,
+          "positive_studies": 97,
+          "positive_patients": 50,
+          "negative_patients": 160,
+          "views": {
+            "PA": 188,
+            "AP": 289
+          }
+        },
+        "test": {
+          "studies": 109,
+          "patients": 55,
+          "positive_studies": 39,
+          "positive_patients": 23,
+          "negative_patients": 42,
+          "views": {
+            "AP": 68,
+            "PA": 41
+          }
+        }
+      },
+      "seen_target_studies": 249,
+      "seen": {
+        "AUROC": 0.7553113553113554,
+        "AUPRC": 0.6114850670523002,
+        "Brier": 0.19581767521732818
+      },
+      "unseen": {
+        "AUROC": 0.6282051282051282,
+        "AUPRC": 0.5357044955149328,
+        "Brier": 0.22158038770100233
+      },
+      "difference": {
+        "AUROC": 0.1271062271062272,
+        "AUPRC": 0.07578057153736739,
+        "Brier": -0.02576271248367415
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.3577981651376147,
+        "Brier": 0.24612370982779888
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.0006283206283206567,
+            0.22748241341991324
+          ],
+          "AUPRC": [
+            -0.11630520886645558,
+            0.23509415647351575
+          ],
+          "Brier": [
+            -0.0579608191509241,
+            0.009484868248608792
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_01",
+      "seed": 20260928,
+      "sizes": {
+        "seen": {
+          "studies": 1409,
+          "patients": 511,
+          "positive_studies": 324,
+          "positive_patients": 158,
+          "negative_patients": 462,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "unseen": {
+          "studies": 1409,
+          "patients": 528,
+          "positive_studies": 324,
+          "positive_patients": 166,
+          "negative_patients": 474,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "valid": {
+          "studies": 477,
+          "patients": 174,
+          "positive_studies": 97,
+          "positive_patients": 50,
+          "negative_patients": 160,
+          "views": {
+            "PA": 188,
+            "AP": 289
+          }
+        },
+        "test": {
+          "studies": 109,
+          "patients": 55,
+          "positive_studies": 39,
+          "positive_patients": 23,
+          "negative_patients": 42,
+          "views": {
+            "AP": 68,
+            "PA": 41
+          }
+        }
+      },
+      "seen_target_studies": 249,
+      "seen": {
+        "AUROC": 0.6542124542124542,
+        "AUPRC": 0.4930581748862985,
+        "Brier": 0.2252359057650737
+      },
+      "unseen": {
+        "AUROC": 0.6967032967032967,
+        "AUPRC": 0.543800374274609,
+        "Brier": 0.22541226310406245
+      },
+      "difference": {
+        "AUROC": -0.04249084249084245,
+        "AUPRC": -0.05074219938831054,
+        "Brier": -0.00017635733898874184
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.3577981651376147,
+        "Brier": 0.24612370982779888
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.12400914634146334,
+            0.03534200316987193
+          ],
+          "AUPRC": [
+            -0.17159794313822896,
+            0.0819596669235109
+          ],
+          "Brier": [
+            -0.020659478564722757,
+            0.02008205384840044
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_01",
+      "seed": 20260929,
+      "sizes": {
+        "seen": {
+          "studies": 1409,
+          "patients": 511,
+          "positive_studies": 324,
+          "positive_patients": 158,
+          "negative_patients": 462,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "unseen": {
+          "studies": 1409,
+          "patients": 528,
+          "positive_studies": 324,
+          "positive_patients": 166,
+          "negative_patients": 474,
+          "views": {
+            "PA": 605,
+            "AP": 804
+          }
+        },
+        "valid": {
+          "studies": 477,
+          "patients": 174,
+          "positive_studies": 97,
+          "positive_patients": 50,
+          "negative_patients": 160,
+          "views": {
+            "PA": 188,
+            "AP": 289
+          }
+        },
+        "test": {
+          "studies": 109,
+          "patients": 55,
+          "positive_studies": 39,
+          "positive_patients": 23,
+          "negative_patients": 42,
+          "views": {
+            "AP": 68,
+            "PA": 41
+          }
+        }
+      },
+      "seen_target_studies": 249,
+      "seen": {
+        "AUROC": 0.6388278388278388,
+        "AUPRC": 0.4886303129100633,
+        "Brier": 0.22307610387171023
+      },
+      "unseen": {
+        "AUROC": 0.5692307692307692,
+        "AUPRC": 0.42380894053932655,
+        "Brier": 0.242220150159721
+      },
+      "difference": {
+        "AUROC": 0.06959706959706957,
+        "AUPRC": 0.06482137237073676,
+        "Brier": -0.01914404628801078
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.3577981651376147,
+        "Brier": 0.24612370982779888
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.008615640096618311,
+            0.1570428153717628
+          ],
+          "AUPRC": [
+            -0.04296510549195372,
+            0.1822312668334926
+          ],
+          "Brier": [
+            -0.04009679910731257,
+            -0.000610159647521258
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260927,
+      "sizes": {
+        "seen": {
+          "studies": 1412,
+          "patients": 532,
+          "positive_studies": 295,
+          "positive_patients": 150,
+          "negative_patients": 488,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "unseen": {
+          "studies": 1412,
+          "patients": 537,
+          "positive_studies": 295,
+          "positive_patients": 160,
+          "negative_patients": 487,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "valid": {
+          "studies": 475,
+          "patients": 182,
+          "positive_studies": 98,
+          "positive_patients": 52,
+          "negative_patients": 167,
+          "views": {
+            "PA": 198,
+            "AP": 277
+          }
+        },
+        "test": {
+          "studies": 90,
+          "patients": 49,
+          "positive_studies": 33,
+          "positive_patients": 21,
+          "negative_patients": 42,
+          "views": {
+            "PA": 24,
+            "AP": 66
+          }
+        }
+      },
+      "seen_target_studies": 246,
+      "seen": {
+        "AUROC": 0.7155768208399788,
+        "AUPRC": 0.5937735957319741,
+        "Brier": 0.21003767179744984
+      },
+      "unseen": {
+        "AUROC": 0.73471557682084,
+        "AUPRC": 0.5993589744841039,
+        "Brier": 0.1984944641151062
+      },
+      "difference": {
+        "AUROC": -0.019138755980861233,
+        "AUPRC": -0.005585378752129833,
+        "Brier": 0.011543207682343626
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.36666666666666664,
+        "Brier": 0.25710512483046966
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.12867036011080332,
+            0.08431328838625478
+          ],
+          "AUPRC": [
+            -0.1923194152790429,
+            0.1702560115168154
+          ],
+          "Brier": [
+            -0.025248982343300794,
+            0.047179544799111614
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260928,
+      "sizes": {
+        "seen": {
+          "studies": 1412,
+          "patients": 532,
+          "positive_studies": 295,
+          "positive_patients": 150,
+          "negative_patients": 488,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "unseen": {
+          "studies": 1412,
+          "patients": 537,
+          "positive_studies": 295,
+          "positive_patients": 160,
+          "negative_patients": 487,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "valid": {
+          "studies": 475,
+          "patients": 182,
+          "positive_studies": 98,
+          "positive_patients": 52,
+          "negative_patients": 167,
+          "views": {
+            "PA": 198,
+            "AP": 277
+          }
+        },
+        "test": {
+          "studies": 90,
+          "patients": 49,
+          "positive_studies": 33,
+          "positive_patients": 21,
+          "negative_patients": 42,
+          "views": {
+            "PA": 24,
+            "AP": 66
+          }
+        }
+      },
+      "seen_target_studies": 246,
+      "seen": {
+        "AUROC": 0.7660818713450293,
+        "AUPRC": 0.6236191468194323,
+        "Brier": 0.2078303302014075
+      },
+      "unseen": {
+        "AUROC": 0.8219032429558746,
+        "AUPRC": 0.7258946086745104,
+        "Brier": 0.17363000011680974
+      },
+      "difference": {
+        "AUROC": -0.05582137161084533,
+        "AUPRC": -0.10227546185507808,
+        "Brier": 0.034200330084597774
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.36666666666666664,
+        "Brier": 0.25710512483046966
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.1351877092300335,
+            0.01701883768534165
+          ],
+          "AUPRC": [
+            -0.2557072000566272,
+            0.046169899018274535
+          ],
+          "Brier": [
+            -0.0023271781224180428,
+            0.07073471582978123
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260929,
+      "sizes": {
+        "seen": {
+          "studies": 1412,
+          "patients": 532,
+          "positive_studies": 295,
+          "positive_patients": 150,
+          "negative_patients": 488,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "unseen": {
+          "studies": 1412,
+          "patients": 537,
+          "positive_studies": 295,
+          "positive_patients": 160,
+          "negative_patients": 487,
+          "views": {
+            "PA": 621,
+            "AP": 791
+          }
+        },
+        "valid": {
+          "studies": 475,
+          "patients": 182,
+          "positive_studies": 98,
+          "positive_patients": 52,
+          "negative_patients": 167,
+          "views": {
+            "PA": 198,
+            "AP": 277
+          }
+        },
+        "test": {
+          "studies": 90,
+          "patients": 49,
+          "positive_studies": 33,
+          "positive_patients": 21,
+          "negative_patients": 42,
+          "views": {
+            "PA": 24,
+            "AP": 66
+          }
+        }
+      },
+      "seen_target_studies": 246,
+      "seen": {
+        "AUROC": 0.722488038277512,
+        "AUPRC": 0.6299781152013839,
+        "Brier": 0.2054272555819105
+      },
+      "unseen": {
+        "AUROC": 0.7421584263689527,
+        "AUPRC": 0.6337882642367291,
+        "Brier": 0.19835753232084857
+      },
+      "difference": {
+        "AUROC": -0.019670388091440727,
+        "AUPRC": -0.003810149035345156,
+        "Brier": 0.007069723261061922
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.36666666666666664,
+        "Brier": 0.25710512483046966
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.0988321765953345,
+            0.06474122807017538
+          ],
+          "AUPRC": [
+            -0.10371642630447421,
+            0.12971567268294323
+          ],
+          "Brier": [
+            -0.015329619254559326,
+            0.02731557878381923
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260927,
+      "sizes": {
+        "seen": {
+          "studies": 1472,
+          "patients": 534,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 487,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "unseen": {
+          "studies": 1472,
+          "patients": 543,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 494,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "valid": {
+          "studies": 485,
+          "patients": 179,
+          "positive_studies": 101,
+          "positive_patients": 54,
+          "negative_patients": 164,
+          "views": {
+            "PA": 207,
+            "AP": 278
+          }
+        },
+        "test": {
+          "studies": 110,
+          "patients": 51,
+          "positive_studies": 42,
+          "positive_patients": 23,
+          "negative_patients": 41,
+          "views": {
+            "AP": 76,
+            "PA": 34
+          }
+        }
+      },
+      "seen_target_studies": 186,
+      "seen": {
+        "AUROC": 0.7156862745098039,
+        "AUPRC": 0.6216520426334149,
+        "Brier": 0.20663711155590542
+      },
+      "unseen": {
+        "AUROC": 0.6981792717086835,
+        "AUPRC": 0.55175978553788,
+        "Brier": 0.21794345068404403
+      },
+      "difference": {
+        "AUROC": 0.017507002801120386,
+        "AUPRC": 0.06989225709553493,
+        "Brier": -0.01130633912813861
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.38181818181818183,
+        "Brier": 0.26196376330501375
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.05690737144702695,
+            0.09227761104441781
+          ],
+          "AUPRC": [
+            -0.043305445777388374,
+            0.15240214947838984
+          ],
+          "Brier": [
+            -0.0379721244717138,
+            0.013619904657846892
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260928,
+      "sizes": {
+        "seen": {
+          "studies": 1472,
+          "patients": 534,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 487,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "unseen": {
+          "studies": 1472,
+          "patients": 543,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 494,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "valid": {
+          "studies": 485,
+          "patients": 179,
+          "positive_studies": 101,
+          "positive_patients": 54,
+          "negative_patients": 164,
+          "views": {
+            "PA": 207,
+            "AP": 278
+          }
+        },
+        "test": {
+          "studies": 110,
+          "patients": 51,
+          "positive_studies": 42,
+          "positive_patients": 23,
+          "negative_patients": 41,
+          "views": {
+            "AP": 76,
+            "PA": 34
+          }
+        }
+      },
+      "seen_target_studies": 186,
+      "seen": {
+        "AUROC": 0.7062324929971989,
+        "AUPRC": 0.5926502071630747,
+        "Brier": 0.23748675409156925
+      },
+      "unseen": {
+        "AUROC": 0.6568627450980392,
+        "AUPRC": 0.5180891619747137,
+        "Brier": 0.23737169724971707
+      },
+      "difference": {
+        "AUROC": 0.04936974789915971,
+        "AUPRC": 0.07456104518836104,
+        "Brier": 0.00011505684185217357
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.38181818181818183,
+        "Brier": 0.26196376330501375
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.03164004914004914,
+            0.12726762820512819
+          ],
+          "AUPRC": [
+            -0.02214149861711279,
+            0.15932003674873912
+          ],
+          "Brier": [
+            -0.019915947700632874,
+            0.023125181630339588
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260929,
+      "sizes": {
+        "seen": {
+          "studies": 1472,
+          "patients": 534,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 487,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "unseen": {
+          "studies": 1472,
+          "patients": 543,
+          "positive_studies": 325,
+          "positive_patients": 157,
+          "negative_patients": 494,
+          "views": {
+            "PA": 615,
+            "AP": 857
+          }
+        },
+        "valid": {
+          "studies": 485,
+          "patients": 179,
+          "positive_studies": 101,
+          "positive_patients": 54,
+          "negative_patients": 164,
+          "views": {
+            "PA": 207,
+            "AP": 278
+          }
+        },
+        "test": {
+          "studies": 110,
+          "patients": 51,
+          "positive_studies": 42,
+          "positive_patients": 23,
+          "negative_patients": 41,
+          "views": {
+            "AP": 76,
+            "PA": 34
+          }
+        }
+      },
+      "seen_target_studies": 186,
+      "seen": {
+        "AUROC": 0.713235294117647,
+        "AUPRC": 0.5944434512727973,
+        "Brier": 0.21949600533058336
+      },
+      "unseen": {
+        "AUROC": 0.657563025210084,
+        "AUPRC": 0.5145448281342745,
+        "Brier": 0.25057840026809747
+      },
+      "difference": {
+        "AUROC": 0.05567226890756294,
+        "AUPRC": 0.0798986231385228,
+        "Brier": -0.031082394937514107
+      },
+      "constant_baseline": {
+        "AUROC": 0.5,
+        "AUPRC": 0.38181818181818183,
+        "Brier": 0.26196376330501375
+      },
+      "paired_bootstrap": {
+        "valid_replicates": 1000,
+        "requested_replicates": 1000,
+        "intervals": {
+          "AUROC": [
+            -0.029792715721840227,
+            0.12775556163954946
+          ],
+          "AUPRC": [
+            -0.056225219223668,
+            0.1620233183833504
+          ],
+          "Brier": [
+            -0.051876432764348036,
+            -0.008340439445404439
+          ]
+        }
+      },
+      "best_epochs": {
+        "seen": 1,
+        "unseen": 1
+      }
+    }
+  ],
+  "provider_seed_summary": [
+    {
+      "provider": "provider_01",
+      "differences": {
+        "AUROC": {
+          "mean": 0.051404151404151444,
+          "sample_sd": 0.08624980120706935,
+          "minimum": -0.04249084249084245,
+          "maximum": 0.1271062271062272
+        },
+        "AUPRC": {
+          "mean": 0.02995324817326454,
+          "sample_sd": 0.07009880494320608,
+          "minimum": -0.05074219938831054,
+          "maximum": 0.07578057153736739
+        },
+        "Brier": {
+          "mean": -0.015027705370224556,
+          "sample_sd": 0.013280571874398827,
+          "minimum": -0.02576271248367415,
+          "maximum": -0.00017635733898874184
+        }
+      }
+    },
+    {
+      "provider": "provider_02",
+      "differences": {
+        "AUROC": {
+          "mean": -0.03154350522771576,
+          "sample_sd": 0.021026929287536716,
+          "minimum": -0.05582137161084533,
+          "maximum": -0.019138755980861233
+        },
+        "AUPRC": {
+          "mean": -0.037223663214184355,
+          "sample_sd": 0.056343502198109546,
+          "minimum": -0.10227546185507808,
+          "maximum": -0.003810149035345156
+        },
+        "Brier": {
+          "mean": 0.017604420342667775,
+          "sample_sd": 0.014545486614018034,
+          "minimum": 0.007069723261061922,
+          "maximum": 0.034200330084597774
+        }
+      }
+    },
+    {
+      "provider": "provider_03",
+      "differences": {
+        "AUROC": {
+          "mean": 0.040849673202614345,
+          "sample_sd": 0.02045948774700695,
+          "minimum": 0.017507002801120386,
+          "maximum": 0.05567226890756294
+        },
+        "AUPRC": {
+          "mean": 0.07478397514080626,
+          "sample_sd": 0.005006906596825843,
+          "minimum": 0.06989225709553493,
+          "maximum": 0.0798986231385228
+        },
+        "Brier": {
+          "mean": -0.014091225741266847,
+          "sample_sd": 0.015784072493100654,
+          "minimum": -0.031082394937514107,
+          "maximum": 0.00011505684185217357
+        }
+      }
+    }
+  ],
+  "source_cohort_sha256": "d295c71ef7ec4f6cd2ee7e05811ddb787831bf418d70db4ccc7e2e252640d7f9",
+  "source_labels_sha256": "571d5f826a5bcdca55582776710116f095e0fbab2b4d44496891045c6561d517",
+  "limitations": [
+    "Report-derived labels; no additional independent human or expert image validation.",
+    "Existing patient split reused; extension retest, not new external validation.",
+    "Providers may share test patients; do not pool them as independent samples.",
+    "Each paired patient interval conditions on trained models; seed spread is descriptive, not a confidence interval.",
+    "Provider association is observational, not causal or an assessment of provider skill.",
+    "AUPRC is implemented as average precision."
+  ]
+}

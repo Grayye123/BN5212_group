@@ -198,11 +198,13 @@ def main():
     ap.add_argument('--work', type=Path, default=Path('private/midterm_v1'))
     ap.add_argument('--zip', type=Path, default=Path('Z:/MIMIC-CXR/BN5212_MIMIC-CXR.zip'))
     ap.add_argument('--epochs', type=int, default=5)
+    ap.add_argument('--seed', type=int, default=SEED, help='Training and bootstrap seed; does not change input manifests')
     ap.add_argument('--random-init', action='store_true', help='Explicit alternative; never silently substitute for ImageNet weights')
     ap.add_argument('--prepare-only', action='store_true')
     ap.add_argument('--cache', type=Path, help='Reuse an existing derived-image cache with the same preprocessing')
     ap.add_argument('--weights-cache', type=Path, help='Reuse an existing torchvision hub cache')
     a = ap.parse_args()
+    globals()['SEED'] = a.seed
     if a.epochs < 1:
         raise ValueError('epochs must be positive')
     torch.set_num_threads(8)

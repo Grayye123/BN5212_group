@@ -1,0 +1,178 @@
+{
+  "checked_at_utc": "2026-10-08T11:49:59.729279+00:00",
+  "actual_checks": [
+    "frozen source and manifest hashes",
+    "patient isolation and label/view matching",
+    "prediction keys/labels against each test manifest",
+    "independent AUROC/AP/Brier recomputation",
+    "strict checkpoint loading and full test re-inference for all 18 models"
+  ],
+  "model_checks": [
+    {
+      "provider": "provider_01",
+      "seed": 20260927,
+      "model": "seen",
+      "sha256": "7891f25f760a827b547a31b19f3070cb4fe43cc99d62e2008e4d8bce8b634da5",
+      "bytes": 44780491,
+      "predictions": 109,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_01",
+      "seed": 20260927,
+      "model": "unseen",
+      "sha256": "503dbae8d8132eefa293dff2d9444cec7ce7eb957348bd5bd4d0dcaa99e74a97",
+      "bytes": 44781899,
+      "predictions": 109,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_01",
+      "seed": 20260928,
+      "model": "seen",
+      "sha256": "5e3bdb7b65777f2b96dc71631a16c84b287b718e13b4982ecb2dab00a44b8848",
+      "bytes": 44780491,
+      "predictions": 109,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_01",
+      "seed": 20260928,
+      "model": "unseen",
+      "sha256": "23c88fcba1ff0e3e9e78a78b2f4b354f800c079b5ca2896866da2db92b926471",
+      "bytes": 44781899,
+      "predictions": 109,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_01",
+      "seed": 20260929,
+      "model": "seen",
+      "sha256": "382a6d1c582884fdfd183fb80ccf58f471fd60302f84ac56348691a785be2d40",
+      "bytes": 44780491,
+      "predictions": 109,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_01",
+      "seed": 20260929,
+      "model": "unseen",
+      "sha256": "78ee68cbc5deeff538915ef129be43da46a86d6185beb4c3c48dc3dff5adad2b",
+      "bytes": 44781899,
+      "predictions": 109,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260927,
+      "model": "seen",
+      "sha256": "d24f5e17bf2ad264cb7185651ebe038cf22bd43eae54641474f6ae26e7edf8f4",
+      "bytes": 44780491,
+      "predictions": 90,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260927,
+      "model": "unseen",
+      "sha256": "46cc5720edef04efcaba9ec8daefbd46447d7cc7c01a8265eb46c34b7ada08ac",
+      "bytes": 44781899,
+      "predictions": 90,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260928,
+      "model": "seen",
+      "sha256": "75a20cec11ac0fb87a6822df79cc046220e1af29f7f82ff48f8a361ddaebf5be",
+      "bytes": 44780491,
+      "predictions": 90,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260928,
+      "model": "unseen",
+      "sha256": "b4bd6dc7b784a7965a9bb0ae23284361a7b4bf9a2a099cf6ef5c18aa2964443c",
+      "bytes": 44781899,
+      "predictions": 90,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260929,
+      "model": "seen",
+      "sha256": "56fccbc722d93bba07d48e5105b469a8d54df38fe99e66bc252988f9e996ac76",
+      "bytes": 44780491,
+      "predictions": 90,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_02",
+      "seed": 20260929,
+      "model": "unseen",
+      "sha256": "5b0dd41a4ad94c6aecb2839bfea71fc019cbe32daa3b73160e01cc638d986e59",
+      "bytes": 44781899,
+      "predictions": 90,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260927,
+      "model": "seen",
+      "sha256": "96d01e0e3f6b3310826fac852d13d249e5bf326fd4b843fb17710b3ce319de93",
+      "bytes": 44780491,
+      "predictions": 110,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260927,
+      "model": "unseen",
+      "sha256": "70a44d311d9636015dda5558e616b385e3122e3925d59306620f79dbaf6a374d",
+      "bytes": 44781899,
+      "predictions": 110,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260928,
+      "model": "seen",
+      "sha256": "9f4d89629106b1d1c2ae07d4dfcf0ad89b490e0e04956d5597c613263e702759",
+      "bytes": 44780491,
+      "predictions": 110,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260928,
+      "model": "unseen",
+      "sha256": "58769bd842bf832968b73e6382f4262e1a3134c22590c81da6f6d29d2f0c9707",
+      "bytes": 44781899,
+      "predictions": 110,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260929,
+      "model": "seen",
+      "sha256": "199be70d4574e3656a0ac1759d67a0075374ddabeaf80636fe9e1f482c45bda5",
+      "bytes": 44780491,
+      "predictions": 110,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "provider": "provider_03",
+      "seed": 20260929,
+      "model": "unseen",
+      "sha256": "30635901ee4d9139afe24d4ee51516886f0530099eb23b6373d3b36aace67b5f",
+      "bytes": 44781899,
+      "predictions": 110,
+      "max_abs_score_error": 0.0
+    }
+  ],
+  "paired_runs": 9,
+  "model_fits": 18,
+  "image_cache_count": 2522,
+  "training_code_sha256": "ef58eaacf023f05c3037cc1d22aebc391fcb1e60871c4eff96a1417ba5611f9d"
+}
